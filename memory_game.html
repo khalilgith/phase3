@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game - Phase 3</title>
+    <link rel="stylesheet" href="memory_game.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>🧠 Memory Game - Phase 3</h1>
+        </header>
+
+        <section class="score-panel">
+            <div class="score-item">
+                <span class="score-label">Moves:</span>
+                <span class="score-value" id="movesCount">0</span>
+            </div>
+            <div class="score-item">
+                <span class="score-label">Score:</span>
+                <span class="score-value" id="totalScore">0</span>
+            </div>
+            <div class="score-item">
+                <span class="score-label">Matches:</span>
+                <span class="score-value" id="matchesCount">0/8</span>
+            </div>
+        </section>
+
+        <main>
+            <div class="performance-feedback" id="performanceFeedback"></div>
+            <div class="game-board" id="gameBoard"></div>
+        </main>
+
+        <footer>
+            <div class="game-controls">
+                <button class="control-btn primary" onclick="restartGame()">🎮 New Game</button>
+                <button class="control-btn" onclick="resetCards()">🔄 Reset</button>
+            </div>
+
+            <div class="demo-controls">
+                <button class="demo-btn" onclick="flipRandomCard()">🔄 Flip Random</button>
+                <button class="demo-btn" onclick="flipAllCards()">👁️ Show All</button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="memory_game.js"></script>
+</body>
+</html>
